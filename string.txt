@@ -1,0 +1,19 @@
+var userInput = ["guvi coding platform"];
+var str = userInput[0].split(" ");
+  var result = [];
+  var rev = "";
+  for(let i=0;i<str.length;i++){
+  for (let i = 0; i < str[i].length; i++) {
+    if (i == 0) {      
+      result.push(str[0][i]);     
+    }
+   
+    for (i = 1; i <= str[i].length - 2; i++) {
+      rev += str[0][i].split("");      
+    }
+    
+    var temp = rev.split("").reverse().join("");
+   result.push(temp);
+  if (i == str[0].length - 1) {
+      result.push(str[0][i]);
+    }
